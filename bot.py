@@ -112,7 +112,7 @@ def write_csv():
     df.to_csv('empty_clan.csv', encoding='utf-8')
     return(df)
 
-client=commands.Bot(intents=discord.Intents.default(),command_prefix = '-')
+client=commands.Bot(intents = nextcord.Intents.all(),command_prefix = '-')
 
 @client.event
 async def on_ready():
