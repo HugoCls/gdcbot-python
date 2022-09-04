@@ -220,9 +220,8 @@ async def getguild(ctx):
     hn=str(socket.getfqdn())
     hn2=socket.gethostbyname(hn)
     
-    ip4=socket.gethostbyname_ex(socket.gethostname())[-1]
-    ip5=get_ip()
-    await ctx.reply('ip1: '+ip_address+' ip2: '+f+' ip3: '+hn2+' ip4: '+ip4+' ip5: '+ip5)
+    ip4=get_ip()
+    await ctx.reply('ip1: '+ip_address+' ip2: '+f+' ip3: '+hn2+' ip4: '+ip4)
 
 def read_token():
     with open('token.txt','r') as f:
