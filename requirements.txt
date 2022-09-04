@@ -1,0 +1,4 @@
+discord
+pandas
+opencv-python
+urllib
