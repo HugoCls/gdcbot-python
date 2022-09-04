@@ -1,4 +1,4 @@
 discord
 pandas
 opencv-python
-urllib
+urllib3
